@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baña a tu Perro como un Profesional - Guía Completa</title>
+    <meta name="description" content="Aprende a bañar a tu perro como un profesional desde casa. Ahorra miles de pesos al año con técnicas paso a paso.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2D2D2D;
+            background: #FFF8F0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2C5F7C 0%, #1A4D6B 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            color: #D4AF37;
+        }
+        
+        .hero .price {
+            font-size: 3em;
+            font-weight: 700;
+            margin: 30px 0;
+            color: #D4AF37;
+        }
+        
+        .hero .price-note {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #D4AF37;
+            color: #1A4D6B;
+            padding: 20px 50px;
+            font-size: 1.3em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+            text-transform: uppercase;
+        }
+        
+        .cta-button:hover {
+            background: #FFD700;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+        }
+        
+        /* Problem Section */
+        .problem {
+            background: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .problem h2 {
+            color: #C44536;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .problem-item {
+            padding: 30px;
+            background: #FFE8E8;
+            border-radius: 15px;
+            border: 2px solid #C44536;
+        }
+        
+        .problem-item .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .problem-item h3 {
+            color: #C44536;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        /* Solution Section */
+        .solution {
+            background: #E8F4F8;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .solution h2 {
+            color: #2C5F7C;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        
+        .solution .intro {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            color: #2D2D2D;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            background: white;
+            padding: 80px 20px;
+        }
+        
+        .benefits h2 {
+            text-align: center;
+            color: #2C5F7C;
+            font-size: 2.5em;
+            margin-bottom: 60px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .benefit-card {
+            padding: 40px;
+            background: #FFF8F0;
+            border-radius: 15px;
+            border: 3px solid #2C5F7C;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .benefit-card .icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-card h3 {
+            color: #2C5F7C;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        /* Content Section */
+        .content {
+            background: #2C5F7C;
+            color: white;
+            padding: 80px 20px;
+        }
+        
+        .content h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #D4AF37;
+        }
+        
+        .content-list {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        
+        .content-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #D4AF37;
+        }
+        
+        .content-item h3 {
+            color: #D4AF37;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        /* Guarantee Section */
+        .guarantee {
+            background: #D4AF37;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .guarantee h2 {
+            color: #1A4D6B;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        
+        .guarantee p {
+            font-size: 1.3em;
+            color: #1A4D6B;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background: white;
+            padding: 80px 20px;
+        }
+        
+        .faq h2 {
+            text-align: center;
+            color: #2C5F7C;
+            font-size: 2.5em;
+            margin-bottom: 60px;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: #E8F4F8;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #2C5F7C;
+        }
+        
+        .faq-item h3 {
+            color: #2C5F7C;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .faq-item p {
+            color: #2D2D2D;
+            line-height: 1.8;
+        }
+        
+        /* Final CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, #1A4D6B 0%, #2C5F7C 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        
+        .final-cta .price-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 40px auto;
+            border: 3px solid #D4AF37;
+        }
+        
+        .final-cta .price {
+            font-size: 3.5em;
+            color: #D4AF37;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1A4D6B;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 10px 0;
+            opacity: 0.8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2em;
+            }
+            
+            .hero .price {
+                font-size: 2.5em;
+            }
+            
+            .problem h2, .solution h2, .benefits h2, .content h2, .faq h2, .final-cta h2 {
+                font-size: 2em;
+            }
+            
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>🐕 Baña a tu Perro<br>como un Profesional</h1>
+            <p class="subtitle">Guía Completa Paso a Paso para Resultados de Salón en Casa</p>
+            <p class="price">$14.99 USD</p>
+            <p class="price-note">Una inversión única, ahorros para toda la vida</p>
+            <a href="https://go.hotmart.com/D102478827P?dp=1" class="cta-button">¡Quiero Mi Guía Ahora!</a>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>¿Te Suena Familiar?</h2>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <div class="icon">💸</div>
+                    <h3>Gastas una Fortuna</h3>
+                    <p>Cada baño profesional cuesta entre $300 y $800 pesos. ¡Son miles al año!</p>
+                </div>
+                <div class="problem-item">
+                    <div class="icon">😰</div>
+                    <h3>Tu Perro Sufre Estrés</h3>
+                    <p>El groomer es un lugar extraño con ruidos fuertes y personas desconocidas.</p>
+                </div>
+                <div class="problem-item">
+                    <div class="icon">⏰</div>
+                    <h3>Pierdes Tiempo</h3>
+                    <p>Esperar turno, llevar, recoger... horas perdidas cada vez.</p>
+                </div>
+                <div class="problem-item">
+                    <div class="icon">❓</div>
+                    <h3>No Sabes Cómo Hacerlo</h3>
+                    <p>Intentaste bañarlo en casa pero fue un desastre total.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <h2>✨ La Solución Está Aquí</h2>
+            <p class="intro">Imagina poder bañar a tu perro con técnicas profesionales, en la comodidad de tu hogar, ahorrando miles de pesos al año mientras fortaleces el vínculo con tu mejor amigo.</p>
+            <p class="intro"><strong>Eso es exactamente lo que lograrás con esta guía completa.</strong></p>
+            <a href="https://go.hotmart.com/D102478827P?dp=1" class="cta-button">Sí, Quiero Aprender Ahora</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2>🎯 Lo Que Vas a Lograr</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="icon">💰</div>
+                    <h3>Ahorra Miles</h3>
+                    <p>Recupera tu inversión en el primer baño. El resto del año son ahorros puros.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🏠</div>
+                    <h3>Desde Tu Casa</h3>
+                    <p>Sin salir, sin esperar, sin estrés. Todo en tu hogar cuando TÚ decidas.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">❤️</div>
+                    <h3>Fortalece el Vínculo</h3>
+                    <p>Convierte el baño en un momento especial de conexión con tu perro.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">⭐</div>
+                    <h3>Resultados Profesionales</h3>
+                    <p>Tu perro lucirá como si acabara de salir del mejor groomer.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🎓</div>
+                    <h3>Fácil de Seguir</h3>
+                    <p>11 pasos claramente explicados. No necesitas experiencia previa.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🔍</div>
+                    <h3>Detecta Problemas</h3>
+                    <p>Aprende a identificar problemas de salud durante el baño.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container">
+            <h2>📚 Lo Que Incluye Tu Guía</h2>
+            <div class="content-list">
+                <div class="content-item">
+                    <h3>PASO 1: Preparación Profesional</h3>
+                    <p>Todos los materiales que necesitas y cómo organizarte como un experto.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 2: Cepillado Pre-Baño</h3>
+                    <p>El secreto que los groomers nunca te cuentan. Técnicas por tipo de pelaje.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 3: Protección de Áreas Sensibles</h3>
+                    <p>Cómo proteger oídos y ojos para evitar infecciones.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 4: Mojado Profesional</h3>
+                    <p>La temperatura exacta y el orden correcto que usan los expertos.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 5: Aplicación de Champú</h3>
+                    <p>Técnicas de masaje profesional que limpian a profundidad y relajan.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 6: Enjuague Perfecto</h3>
+                    <p>El error #1 que cometen los dueños y cómo evitarlo.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 7: Secado con Toalla</h3>
+                    <p>La técnica correcta para eliminar el 70% del agua antes de la secadora.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 8: Secado Profesional</h3>
+                    <p>Cómo usar la secadora de forma segura o alternativas para perros nerviosos.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 9: Cepillado Final</h3>
+                    <p>El toque que da ese acabado de salón profesional.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 10: Retoques Importantes</h3>
+                    <p>Limpieza de ojos, oídos, revisión de patas y uñas.</p>
+                </div>
+                <div class="content-item">
+                    <h3>PASO 11: Recompensa y Refuerzo</h3>
+                    <p>Cómo hacer que tu perro AME el baño.</p>
+                </div>
+                <div class="content-item">
+                    <h3>BONUS: Errores Comunes</h3>
+                    <p>Los 10 errores que debes evitar a toda costa.</p>
+                </div>
+                <div class="content-item">
+                    <h3>BONUS: Frecuencia de Baño</h3>
+                    <p>Cuándo bañar según tipo de pelaje y actividad de tu perro.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="https://go.hotmart.com/D102478827P?dp=1" class="cta-button">Quiero Acceso Completo Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="container">
+            <h2>🛡️ Sin Riesgo Para Ti</h2>
+            <p>Estamos tan seguros de que esta guía transformará el cuidado de tu perro, que si por cualquier razón no cumple tus expectativas, Hotmart maneja una garantía de satisfacción. Tu inversión está protegida.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>❓ Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>¿Necesito experiencia previa?</h3>
+                    <p>¡Para nada! Esta guía está diseñada para principiantes totales. Todo está explicado paso a paso con lenguaje sencillo.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Funciona para todas las razas?</h3>
+                    <p>Sí. Incluye consejos específicos para pelo corto, largo, rizado y todas las variaciones. Adaptable a cualquier tamaño.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Qué pasa si mi perro odia el baño?</h3>
+                    <p>La guía incluye técnicas específicas para perros nerviosos o con miedo al agua, además de alternativas como secado natural.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Cómo recibo el ebook?</h3>
+                    <p>Inmediatamente después de la compra, recibirás un email con el link de descarga. Acceso instantáneo 24/7.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Necesito productos especiales?</h3>
+                    <p>La guía te explica exactamente qué productos usar (todos accesibles) y cuáles son innecesarios. Sin gastos extras.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Realmente voy a ahorrar dinero?</h3>
+                    <p>Sí. Si gastas $500 pesos por baño profesional y bañas a tu perro 10 veces al año, son $5,000 pesos anuales. Esta guía cuesta $14.99 USD una sola vez.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Puedo leerlo en mi celular?</h3>
+                    <p>Totalmente. Es un PDF que puedes leer en celular, tablet, computadora o imprimir. El formato que prefieras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>🚀 Transforma el Baño de Tu Perro Hoy Mismo</h2>
+            <p style="font-size: 1.3em; margin: 30px 0;">No sigas gastando cientos de pesos cada mes. No sigas viendo a tu perro estresado en el groomer.</p>
+            <p style="font-size: 1.3em; margin-bottom: 40px;">Toma el control. Aprende las técnicas profesionales. Ahorra miles. Fortalece tu vínculo.</p>
+            
+            <div class="price-box">
+                <p style="font-size: 1.5em; margin-bottom: 10px;">Inversión Única:</p>
+                <div class="price">$14.99 USD</div>
+                <p style="font-size: 1.2em; margin-top: 20px;">Acceso inmediato • Descarga instantánea • Para siempre</p>
+            </div>
+            
+            <a href="https://go.hotmart.com/D102478827P?dp=1" class="cta-button" style="font-size: 1.5em; padding: 25px 60px;">¡Sí, Quiero Mi Guía Ahora!</a>
+            
+            <p style="margin-top: 30px; font-size: 1.1em; opacity: 0.9;">✅ Acceso instantáneo<br>✅ Pago seguro vía Hotmart<br>✅ Comienza en los próximos 5 minutos</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Baña a tu Perro como un Profesional. Todos los derechos reservados.</p>
+            <p>Este producto es comercializado con el apoyo de Hotmart. La plataforma no realiza un control editorial previo de los productos vendidos, ni evalúa el tecnicismo y la experiencia de quienes los producen. La existencia de un producto y su adquisición, a través de la plataforma, no puede considerarse garantía de calidad de contenido y resultado, en ningún caso. Al adquirirlo, el comprador declara conocer esta información. Puede acceder a los términos y políticas de Hotmart aquí, incluso antes de finalizar la compra.</p>
+        </div>
+    </footer>
+</body>
+</html>
